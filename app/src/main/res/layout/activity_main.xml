@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2012 Google Inc. All rights reserved.
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main">
+
+
+    <![CDATA[
+
+    >
+
+    ]]>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Not Logged In"
+        android:id="@+id/loginStatus"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/button_mult"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="126dp"
+        android:layout_height="20dp"
+        android:id="@+id/friends_button"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/friends_button"
+        android:layout_below="@+id/imageViewProfile"
+        android:layout_alignLeft="@+id/imageViewProfile"
+        android:layout_alignStart="@+id/imageViewProfile"
+        android:layout_alignRight="@+id/imageViewProfile"
+        android:layout_alignEnd="@+id/imageViewProfile" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageViewProfile"
+        android:layout_gravity="left|top"
+        android:background="@drawable/com_facebook_profile_picture_blank_portrait"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/button_mult"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/mulitplayer"
+        android:layout_above="@+id/storeButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/storeButton"
+        android:layout_gravity="center"
+        android:background="@drawable/store"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="10dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewFriends"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/storeButton"
+        android:layout_marginTop="40dp" />
+
+</RelativeLayout>

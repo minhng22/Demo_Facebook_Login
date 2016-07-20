@@ -1,0 +1,5 @@
+<resources>
+    <!-- Insert your app id from the Developer Consoles -->
+    <string name="app_id">794126318635</string>
+    <string name="client_id">163490518949</string>
+</resources>
